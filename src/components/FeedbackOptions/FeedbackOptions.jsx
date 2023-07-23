@@ -1,5 +1,4 @@
 import css from './FeedbackOptions.module.css';
-import PropTypes from 'prop-types';
 
 const coffeeBeanImg = (
   <img
@@ -40,10 +39,5 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => (
     ))}
   </div>
 );
-
-FeedbackOptions.propTypes = {
-  options: PropTypes.arrayOf(PropTypes.string),
-  onLeaveFeedback: PropTypes.func,
-};
 
 export default FeedbackOptions;
